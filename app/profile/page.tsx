@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import React from 'react'
 import { CgProfile } from 'react-icons/cg'
@@ -6,6 +7,9 @@ import { MdOutlineConnectWithoutContact } from 'react-icons/md'
 import { SiOpenproject } from 'react-icons/si'
 
 const Profile = () => {
+  const serviceRoot = () => {
+    window.location.href = '/service';
+  };
   return (
     <div className="min-h-screen bg-black">
       <div className="flex justify-between items-center p-2 bg-black shadow-md">
@@ -28,15 +32,24 @@ const Profile = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center p-6 mt-6 bg-black shadow-md rounded-md">
+      <div className="flex flex-col items-center  bg-black shadow-md rounded-md">
         <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
           <img src="Albi.jpg" alt="Profile Picture" className="w-full h-full object-cover" />
         </div>
         <h1 className="text-2xl font-bold text-white mb-2">Albin John</h1>
-        <p className="text-gray-400 mb-4">Frontend Developer | ReactJS | NextJS</p>
+        <p className="text-gray-400 mb-4">Frontend Developer | ReactJS | NextJS | UI UX Designer</p>
+        <h2 className="text-gray-400">1 Year experience in Frontend Development</h2>
+        <br/>
+        <p className="text-gray-400" >Diploma In Fire and Safety NEBOSH </p>
+        <br/>
+        <p className="text-gray-400">Intern @ Bridgeon Solutions LLP </p>
+        <br/>
         <Link href="/ALBIN-JOHN (2).pdf">
-          <h2 className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200">Free Download My Resume</h2>
+          <h2 className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200"> Download My Resume</h2>
         </Link>
+        <button  onClick={serviceRoot}
+        className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200 mt-9">Go to Services
+        </button>
       </div>
     </div>
   )
@@ -45,4 +58,5 @@ const Profile = () => {
 export default Profile
 
 
-// 
+
+
