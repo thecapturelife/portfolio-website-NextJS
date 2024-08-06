@@ -5,6 +5,8 @@ import { CgProfile } from 'react-icons/cg'
 import { GiSkills } from 'react-icons/gi'
 import { MdOutlineConnectWithoutContact } from 'react-icons/md'
 import { SiOpenproject } from 'react-icons/si'
+import DownloadButton from '../components/DownloadBtn'
+import AnimatedButton from '../components/Gotoservice'
 
 const Profile = () => {
   const serviceRoot = () => {
@@ -40,16 +42,19 @@ const Profile = () => {
         <p className="text-gray-400 mb-4">Frontend Developer | ReactJS | NextJS | UI UX Designer</p>
         <h2 className="text-gray-400">1 Year experience in Frontend Development</h2>
         <br/>
+        <p className="text-gray-400">Intern @ Bridgeon Solutions LLP , Kakkancheri </p>
+        <br/>
         <p className="text-gray-400" >Diploma In Fire and Safety NEBOSH </p>
         <br/>
-        <p className="text-gray-400">Intern @ Bridgeon Solutions LLP </p>
-        <br/>
         <Link href="/ALBIN-JOHN (2).pdf">
-          <h2 className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200"> Download My Resume</h2>
+          <DownloadButton/>
         </Link>
-        <button  onClick={serviceRoot}
+        <div onClick={serviceRoot}>
+        <AnimatedButton />
+        </div>
+        {/* <button  onClick={serviceRoot}
         className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200 mt-9">Go to Services
-        </button>
+        </button> */}
       </div>
     </div>
   )
