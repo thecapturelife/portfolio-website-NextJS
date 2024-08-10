@@ -8,11 +8,13 @@ import { SiOpenproject } from 'react-icons/si';
 const Projects = () => {
   return (
     <div className="bg-black min-h-screen">
-      {/* Navigation Section */}
       <div className="flex justify-between items-center p-4 bg-black text-white">
         <div className="w-32 h-32">
           <img src="Logo.png" alt="Logo" className="w-full h-full object-cover" />
         </div>
+        <div>
+      <h1 className=' flex justify-center font-bold text-4xl mb-4'><span className=' text-red-800'>P</span>rojects</h1>
+      </div>
         <div className="flex space-x-4">
           <Link href="./profile">
             <CgProfile className="w-12 h-12 text-gray-400 hover:text-blue-400 hover:scale-110 transition-transform duration-200 ease-in-out" />
@@ -29,7 +31,6 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* Projects Section */}
       <div className="p-6 md:p-12">
         <div className="mb-12">
           <h1 className="text-3xl md:text-4xl font-extrabold mb-6">E-Commerce Project</h1>

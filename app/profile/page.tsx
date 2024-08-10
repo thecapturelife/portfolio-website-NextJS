@@ -13,26 +13,8 @@ const Profile = () => {
     window.location.href = '/service';
   };
   return (
-    <div className="min-h-screen bg-black">
-      <div className="flex justify-between items-center p-2 bg-black shadow-md">
-        <div className="w-32 h-32">
-          <img src="Logo.png" alt="Logo" />
-        </div>
-        <div className="flex space-x-4">
-          <Link href="/profile">
-            <CgProfile className="w-14 h-14 text-gray-700 hover:text-blue-500 hover:scale-110 transition-transform duration-200 ease-in-out" />
-          </Link>
-          <Link href='/skills'>
-            <GiSkills className="w-14 h-14 text-gray-700 hover:text-green-500 hover:scale-110 transition-transform duration-200 ease-in-out" />
-          </Link>
-          <Link href='/projects'>
-            <SiOpenproject className="w-14 h-14 text-gray-700 hover:text-orange-500 hover:scale-110 transition-transform duration-200 ease-in-out" />
-          </Link>
-          <Link href='/connect'>
-            <MdOutlineConnectWithoutContact className="w-14 h-14 text-gray-700 hover:text-red-500 hover:scale-110 transition-transform duration-200 ease-in-out" />
-          </Link>
-        </div>
-      </div>
+    <div className="min-h-screen bg-black"> 
+ 
 
       <div className="flex flex-col items-center  bg-black shadow-md rounded-md">
         <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
